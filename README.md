@@ -1,5 +1,5 @@
 # GRPC Services and Registry
-
+#### note: see Assignment6.pdf to see context on completed requirements
 ## Task 1 & 2 Readme
 ### To run with defaults
 gradle runClientJava --console=plain
