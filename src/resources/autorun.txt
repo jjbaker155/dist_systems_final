@@ -1,0 +1,22 @@
+1
+This is an auto run
+2
+1
+2
+3
+1
+4.7 6.3
+3
+3
+4 7.5
+3
+4
+1.4 0
+4
+1
+4
+2
+Then the autorun added a line to the story
+5
+6
+0

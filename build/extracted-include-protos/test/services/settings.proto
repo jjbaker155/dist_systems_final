@@ -1,0 +1,31 @@
+//This proto file is for Task 2. This will get process and networking info from the server
+//as well as allowing for basic remote command execution.
+syntax = "proto3";
+option java_multiple_files = true;
+option java_package = "service";
+option java_outer_classname = "SettingsProto";
+package services;
+service Settings {
+  rpc getProcessList (ProcessListReq) returns (ProcessListRes) {}
+  rpc getNetworkInfo (NetworkInfoReq) returns (NetworkInfoRes) {}
+  rpc execute (ExecuteReq) returns (ExecuteRes) {}
+}
+message ProcessListReq {
+}
+message ProcessListRes {
+  repeated string processList = 1;
+  bool isSuccessful = 2;
+}
+message NetworkInfoReq {
+}
+message NetworkInfoRes {
+  repeated string NetworkInfo = 1;
+  bool isSuccessful = 2;
+}
+message ExecuteReq {
+  string command = 1;
+}
+message ExecuteRes {
+  repeated string commandOutput = 1;
+  bool isSuccessful = 2;
+}
